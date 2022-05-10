@@ -13,7 +13,19 @@ Unfortunately I am no longer actively working in the Laravel ecosystem and as su
 Install the package using composer
 
 ```sh
-composer require silvanite/nova-field-cloudinary
+composer require wilber/nova-field-cloudinary
+```
+
+Add to the `respositories` section of `composer.json`
+
+```
+...
+"repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:WilberGroup/nova-field-cloudinary.git"
+        },
+    ],
 ```
 
 Add the cloudinary disk to the filesystem config and set the environment variables for your Cloudinary account.
